@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Booking App</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking App</title>
 
-  <!-- PWA Meta -->
-  <link rel="manifest" href="./manifest.json" />
-  <meta name="theme-color" content="#2196f3" />
-  <link rel="icon" href="./icons/icon-192x192.png" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Booking App" />
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Redirect to Google Apps Script Web App -->
-  <meta http-equiv="refresh" content="0; url='https://script.google.com/macros/s/AKfycbzDrDerTzjWcUm8tflp3Yb7fibjXGfqccxC1uF_8N-pfsTZDJ2vsUv1v9dwO1z6NNo68A/exec'" />
-</head>
-<body>
-  <p>Redirecting to your booking system...</p>
-
-  <script>
-    // Optional: Register a basic service worker (won’t cache, just makes it PWA installable)
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js').catch(error => {
-        console.error('Service Worker registration failed:', error);
-      });
-    }
-  </script>
-</body>
+    <!-- Redirect to your Google Apps Script Web App -->
+    <meta http-equiv="refresh" content="0; URL='https://script.google.com/macros/s/AKfycby7fWSQKBRp4SpNUiJZypmNwJyG6w9VBovH26CSZYNgSicfwTueZ3LIZ-BGbpyBAQB3Gg/exec'" />
+  </head>
+  <body>
+    <p>Redirecting to your booking system...</p>
+  </body>
 </html>
