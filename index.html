@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking App</title>
 
-    <!-- PWA Manifest -->
+    <!-- PWA Setup -->
     <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="icons/icon-192x192.png" type="image/png" />
+    <meta name="theme-color" content="#2196f3" />
 
-    <!-- Redirect to your Google Apps Script Web App -->
-    <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbxYY2b16NenmPJk6ohZqvW05HbmWvqKlMZIgr2GhdGakDOU-YI5DRzjUZ_TTiaA5ZPD/exec">
-
+    <!-- Redirect to Google Apps Script -->
+    <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbzZnacbewEcruqrgYNk9Iv5yLR6E2N-_1YZG0RRh4hP9hMBv9yaDMHyYxL2SF_wFrZ5/exec"/>
   </head>
   <body>
-    <p>Redirecting to Sabra booking system...</p>
+    <p>Redirecting to Sabra kruger booking system...</p>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => console.log("Service Worker registered", reg))
+          .catch(err => console.error("Service Worker registration failed", err));
+      }
+    </script>
   </body>
 </html>
